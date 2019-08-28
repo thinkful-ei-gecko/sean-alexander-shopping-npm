@@ -1,6 +1,9 @@
-'use strict';
-// eslint-disable-next-line no-unused-vars
-const api = (function(){
+import 'normalize.css';
+import 'index.css';
+import $ from 'jquery'; 
+import store from './store';
+import shoppingList from './shopping-list';
+
   const BASE_URL = 'https://thinkful-list-api.herokuapp.com/rich';
 
   /**
@@ -78,10 +81,9 @@ const api = (function(){
     });
   };
 
-  return {
+export default {
     getItems,
     createItem,
     updateItem,
     deleteItem,
-  };
-}());
+}

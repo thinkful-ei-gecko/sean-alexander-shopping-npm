@@ -1,10 +1,10 @@
-'use strict';
-/* global store, api, $ */
+import 'normalize.css';
+import 'index.css';
+import $ from 'jquery'; 
+import api from './api';
+import store from './store';
 
-// eslint-disable-next-line no-unused-vars
-const shoppingList = (function(){
-
-  function generateError(message) {
+function generateError(message) {
     return `
       <section class="error-content">
         <button id="cancel-error">X</button>
@@ -200,9 +200,7 @@ const shoppingList = (function(){
     handleCloseError();
   }
 
-  // This object contains the only exposed methods from this module:
-  return {
-    render: render,
-    bindEventListeners: bindEventListeners,
-  };
-}());
+export default {
+  render: render,
+  bindEventListeners: bindeEventListeners
+}

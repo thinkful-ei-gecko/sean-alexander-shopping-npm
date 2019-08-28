@@ -4,11 +4,13 @@
   "description": "Created for the Thinkful EI Program.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thinkful-ei-gecko/sean-alexander-shopping-npm.git"
+    "url": "https://github.com/thinkful-ei-gecko/sean-alexander-shopping-npm.git"
   },
   "keywords": [],
   "author": "",
@@ -29,4 +31,5 @@
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
   }
+  
 }
